@@ -33,8 +33,8 @@ def my_method(data, maxlags=1, correct_pvalues=True):
     T, N = data.shape
 
     # Standardize data
-    data -= data.mean(axis=0)
-    data /= data.std(axis=0)
+    #data -= data.mean(axis=0)
+    #data /= data.std(axis=0)
 
     #########
     # Fit VAR model and get coefficients and p-values

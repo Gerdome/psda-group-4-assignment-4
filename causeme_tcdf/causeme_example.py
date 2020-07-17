@@ -26,17 +26,17 @@ results = {}
 ################################################
 
 # Method name just for file saving
-method_name = 'varmodel-python'
+method_name = 'tcdf'
 
 # Insert method hash obtained from CauseMe after method registration
-results['method_sha'] = "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+results['method_sha'] = "29ca7c9e0d3b444194c2337edafe53fb"
 
 # The only parameter here is the maximum time lag
 maxlags = 5
 
 # Parameter values: These are essential to validate your results
 # provided that you also uploaded code
-results['parameter_values'] = "maxlags=%d" % maxlags
+results['parameter_values'] = "default" #% maxlags
 
 #################################################
 # Experiment details
@@ -45,7 +45,7 @@ results['parameter_values'] = "maxlags=%d" % maxlags
 results['model'] = 'linear-VAR'
 
 # Here we choose the setup with N=3 variables and time series length T=150
-experimental_setup = 'N-3_T-150'
+experimental_setup = 'N-10_T-150'
 results['experiment'] = results['model'] + '_' + experimental_setup
 
 # Adjust save name if needed
@@ -82,7 +82,7 @@ with zipfile.ZipFile(experiment_zip, "r") as zip_ref:
         start_time = time.time()
 
         # Run your method (adapt parameters if needed)
-        val_matrix, p_matrix, lag_matrix = my_method(data, maxlags)
+        val_matrix, p_matrix, lag_matrix = my_method(data)
         runtimes.append(time.time() - start_time)
 
         # Now we convert the matrices to the required format
