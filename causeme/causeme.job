@@ -1,0 +1,28 @@
+
+# Enter the path to the script on the SDIL platform
+executable = /smartdata/uqeih/causeme/run.sh
+
+# Arguments to be passed to the shell command
+arguments = $(method) $(model) $(experiment)
+
+# defining memory requirements
+request_memory = 8 GB
+
+# defining to use 4 CPU
+request_cpus = 4
+
+# defining the max. run time of the job
++REQUESTED_WALLTIME = 8
+
+# defining the mail address for notification
+notify_user = uqeih@student.kit.edu
+notification = Always
+when_to_transfer_output = ON_EXIT_OR_EVICT
+
+# Location of log and output files
+output = /smartdata/uqeih/batch_output/$(Cluster)-$(Process)_job.out
+error = /smartdata/uqeih/batch_output/$(Cluster)-$(Process)_job.error
+log = /smartdata/uqeih/batch_output/$(Cluster)-$(Process)_job.log
+
+# Run the program for all configurations
+queue method,model,experiment from /smartdata/uqeih/causeme/experiments.txt
