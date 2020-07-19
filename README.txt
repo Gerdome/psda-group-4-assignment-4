@@ -1,1 +1,0 @@
-This repository contains our solutions for the assignment 4 of the Smart Data Analytics Praktikum (PSDA).
