@@ -1,4 +1,4 @@
-allbed_mean,ICUbed_mean,InvVen_mean,admis_mean,newICU_mean,bedover_mean,icuover_mean,deaths_mean,totdea_mean,mobility_composite,total_tests,confirmed_infections,est_infections_mean
+allbed_mean,ICUbed_mean,InvVen_mean,admis_mean,newICU_mean,bedover_mean,icuover_mean,deaths_mean,totdea_mean,mobility_composite,total_tests,confirmed_infections,est_infections_mean, stay_home_states, educational_fac_states, any_gathering_restrict_states, any_business_states, all_non-essential_business_states 
 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,1098.08320699869,0.0,1.6506646287526598
 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,1246.0569135219,0.0,2.94662923772802
 0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,1396.19462002607,0.9999999999999909,4.466703947335009

@@ -211,6 +211,8 @@ def runTCDF(datafile):
     return allcauses, alldelays, allreallosses, allscores, columns
 
 def plotgraph(stringdatafile,alldelays,columns):
+    plt.figure(figsize=(20,10)) 
+
     """Plots a temporal causal graph showing all discovered causal relationships annotated with the time delay between cause and effect."""
     G = nx.DiGraph()
     for c in columns:
@@ -231,6 +233,8 @@ def plotgraph(stringdatafile,alldelays,columns):
     ax.collections[0].set_edgecolor("#000000") 
 
     pylab.show()
+
+    #plt.savefig('graph.png', bbox_inches='tight')
 
 def main(datafiles, evaluation):
     if evaluation:
