@@ -36,9 +36,9 @@ if method_name == 'pcmci':
     results['parameter_values'] = "maxlag=5"
 elif method_name == 'tcdf':
     from causeme_tcdf import my_method
-    callmethod = lambda data: my_method(data, hidden_layers=1)
+    callmethod = lambda data: my_method(data, hidden_layers=0)
     results['method_sha'] = "29ca7c9e0d3b444194c2337edafe53fb"
-    results['parameter_values'] = "hidden=1"
+    results['parameter_values'] = "hidden=0"
 else:
     sys.exit('Invalid method name!')
 
