@@ -11,3 +11,5 @@ Solutions for task 2 can be found [here](https://git.scc.kit.edu/ubelj/psda-grou
 - ./covid-tcdf/
 
 *Requirements for running scripts and notebooks:* Refer to requirements.txt
+
+Presentation slides are available as a [PDF](https://git.scc.kit.edu/ubelj/psda-group-4-assignment-4/-/blob/master/Presentation%20Slides.pdf) version as well as [PPTX](https://git.scc.kit.edu/ubelj/psda-group-4-assignment-4/-/blob/master/Presentation%20Slides.pptx).
